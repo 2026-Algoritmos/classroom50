@@ -1,0 +1,22 @@
+{
+  "schema": "classroom50/classroom/v1",
+  "name": "Algoritmos y Estructura de Datos",
+  "short_name": "algoritmos-y-estructura-de-datos-2026",
+  "term": "2026",
+  "org": "2026-Algoritmos",
+  "team": {
+    "id": 18313347,
+    "slug": "classroom50-algoritmos-y-estructura-de-datos-2026"
+  },
+  "teams": {
+    "instructor": {
+      "id": 18313348,
+      "slug": "classroom50-algoritmos-y-estructura-de-datos-2026-instructor"
+    },
+    "ta": {
+      "id": 18313349,
+      "slug": "classroom50-algoritmos-y-estructura-de-datos-2026-ta"
+    }
+  },
+  "secret": "nhbervy5"
+}
