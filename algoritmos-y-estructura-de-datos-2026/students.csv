@@ -1,1 +1,2 @@
-
+username,first_name,last_name,email,section,github_id,enrollment_status,enrollment_method,email_hash,invite_token,invited_at,enrolled_at
+jorge-test-class,,,,,298520104,enrolled,github,,3f711d4f705d1e6ef26300aa64e6ad31,2026-07-03T02:30:58.112Z,2026-07-03T02:30:58.112Z
