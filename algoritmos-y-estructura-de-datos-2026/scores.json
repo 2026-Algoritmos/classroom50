@@ -1,4 +1,35 @@
 {
   "schema": "classroom50/scores/v1",
-  "assignments": {}
+  "assignments": {
+    "ghgh": {
+      "type": "individual",
+      "entries": [
+        {
+          "owner": "jorge-test-class",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "jorge-test-class",
+              "submission": "submit/2026-07-03T02-38-51Z-d7ae2dc",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-ghgh-jorge-test-class/commit/d7ae2dc62f195cf5884aa2b52ed3a8db60cb79f4",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-ghgh-jorge-test-class/releases/tag/submit%2F2026-07-03T02-38-51Z-d7ae2dc",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-ghgh-jorge-test-class/compare/cfe186fbaa3c62b04ee8b6aed194cc269c4c8d61...d7ae2dc62f195cf5884aa2b52ed3a8db60cb79f4",
+              "datetime": "2026-07-03T02:38:37Z",
+              "graded_at": "2026-07-03T02:39:05Z",
+              "score": 0,
+              "max-score": 0,
+              "tests": [],
+              "submitted_by": {
+                "username": "jorge-test-class",
+                "id": 298520104
+              },
+              "late": true
+            }
+          ]
+        }
+      ]
+    }
+  }
 }
