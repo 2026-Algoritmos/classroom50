@@ -47,8 +47,8 @@
               "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-jorge-test-class/releases/tag/submit%2F2026-07-08T04-57-30Z-bf058b3",
               "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-jorge-test-class/compare/c8ee19bc9f678aac38562ea1468359524631e083...bf058b36c0cdb097d5a90786495cd18e0122dca9",
               "datetime": "2026-07-08T04:57:14Z",
-              "graded_at": "2026-07-08T20:52:27Z",
-              "score": 10,
+              "graded_at": "2026-07-08T21:11:45Z",
+              "score": 6,
               "max-score": 10,
               "tests": [
                 {
@@ -65,8 +65,8 @@
                 },
                 {
                   "test-name": "edge_check",
-                  "passed": true,
-                  "score": 4,
+                  "passed": false,
+                  "score": 0,
                   "max-score": 4
                 }
               ],
