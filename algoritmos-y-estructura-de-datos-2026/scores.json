@@ -30,6 +30,43 @@
           ]
         }
       ]
+    },
+    "practica-0": {
+      "type": "individual",
+      "entries": [
+        {
+          "owner": "jorge-test-class",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "jorge-test-class",
+              "submission": "submit/2026-07-08T04-57-30Z-bf058b3",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-jorge-test-class/commit/bf058b36c0cdb097d5a90786495cd18e0122dca9",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-jorge-test-class/releases/tag/submit%2F2026-07-08T04-57-30Z-bf058b3",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-jorge-test-class/compare/c8ee19bc9f678aac38562ea1468359524631e083...bf058b36c0cdb097d5a90786495cd18e0122dca9",
+              "datetime": "2026-07-08T04:57:14Z",
+              "graded_at": "2026-07-08T04:57:46Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "practica_0_basic",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 10
+                }
+              ],
+              "submitted_by": {
+                "username": "jorge-test-class",
+                "id": 298520104
+              },
+              "late": false
+            }
+          ]
+        }
+      ]
     }
   }
 }
