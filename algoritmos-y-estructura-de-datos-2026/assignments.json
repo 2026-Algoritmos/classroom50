@@ -63,10 +63,10 @@
         {
           "name": "test 2",
           "type": "io",
-          "run": "python3 ./practica_00/setup_check.py",
+          "run": "python3 -c \"from practica_00.setup_check import student_info; info = student_info(); required = {'student_name', 'github_user', 'python_version', 'editor', 'os'}; assert isinstance(info, dict); assert required <= set(info.keys()); print('OK')\"",
           "points": 10,
           "comparison": "included",
-          "expected": "student_name"
+          "expected": "ok"
         }
       ]
     }
