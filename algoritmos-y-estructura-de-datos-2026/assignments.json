@@ -2,20 +2,6 @@
   "schema": "classroom50/assignments/v1",
   "assignments": [
     {
-      "slug": "ghgh",
-      "name": "ghgh",
-      "mode": "individual",
-      "autograder": "default",
-      "feedback_pr": true,
-      "due": "2026-07-03T02:34:00Z",
-      "due_meta": {
-        "input": "2026-07-02T20:34:00",
-        "zone": "America/Mexico_City",
-        "offset": "-06:00",
-        "source": "auto-detected"
-      }
-    },
-    {
       "slug": "test",
       "name": "test",
       "mode": "individual",
