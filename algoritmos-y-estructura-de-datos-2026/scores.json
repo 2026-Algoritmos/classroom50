@@ -42,12 +42,51 @@
               "classroom": "algoritmos-y-estructura-de-datos-2026",
               "assignment_type": "individual",
               "owner": "jorge-test-class",
+              "submission": "submit/2026-07-08T21-39-42Z-e0f8e7b",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-jorge-test-class/commit/e0f8e7b42c0a0f269cb35a79b5916f914d28b487",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-jorge-test-class/releases/tag/submit%2F2026-07-08T21-39-42Z-e0f8e7b",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-jorge-test-class/compare/c8ee19bc9f678aac38562ea1468359524631e083...e0f8e7b42c0a0f269cb35a79b5916f914d28b487",
+              "datetime": "2026-07-08T21:39:30Z",
+              "graded_at": "2026-07-08T21:39:55Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "jorge-test-class",
+                "id": 298520104
+              },
+              "late": false
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "jorge-test-class",
               "submission": "submit/2026-07-08T04-57-30Z-bf058b3",
               "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-jorge-test-class/commit/bf058b36c0cdb097d5a90786495cd18e0122dca9",
               "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-jorge-test-class/releases/tag/submit%2F2026-07-08T04-57-30Z-bf058b3",
               "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-jorge-test-class/compare/c8ee19bc9f678aac38562ea1468359524631e083...bf058b36c0cdb097d5a90786495cd18e0122dca9",
               "datetime": "2026-07-08T04:57:14Z",
-              "graded_at": "2026-07-08T21:11:45Z",
+              "graded_at": "2026-07-08T21:37:22Z",
               "score": 6,
               "max-score": 10,
               "tests": [
