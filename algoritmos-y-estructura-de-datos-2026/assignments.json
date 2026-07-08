@@ -61,10 +61,12 @@
       },
       "tests": [
         {
-          "name": "practica_0_basic",
-          "type": "python",
-          "run": "python3 -m pytest -q practica_0_basic.py",
-          "points": 10
+          "name": "test 2",
+          "type": "io",
+          "run": "python3 ./practica_00/setup_check.py",
+          "points": 10,
+          "comparison": "included",
+          "expected": "student_name"
         }
       ]
     }
