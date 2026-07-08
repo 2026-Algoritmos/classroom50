@@ -7,7 +7,7 @@
       "mode": "individual",
       "autograder": "default",
       "feedback_pr": true,
-      "description": "# Práctica 0: Entorno de trabajo\n\n## Objetivo\n\nVerificar que se tiene listo el entorno mínimo de trabajo para el curso: Python, Conda, VS Code, Git, GitHub y Classroom 50.\n\nEsta práctica no evalúa algoritmos. Evalúa que puedas clonar un repositorio, crear archivos, escribir una función sencilla, documentar tu entorno, hacer commit, subir tus cambios y verificar la entrega.\n\n## Instrucciones\n\n1. Clona el repositorio de esta práctica en tu computadora.\n\n2. Dentro del repositorio, crea una carpeta llamada `practica_00`.\n\n3. Dentro de `practica_00`, crea un archivo llamado `setup_check.py`.\n\n4. En `setup_check.py`, implementa la función `student_info()`.\n\nLa función debe regresar un diccionario con las siguientes llaves:\n\n- `\"student_name\"`\n- `\"github_user\"`\n- `\"python_version\"`\n- `\"editor\"`\n- `\"os\"`\n\nEjemplo de estructura esperada:\n\ndef student_info():\n    return {\n        \"student_name\": \"Nombre completo\",\n        \"github_user\": \"usuario_github\",\n        \"python_version\": \"3.11\",\n        \"editor\": \"VS Code\",\n        \"os\": \"Windows/Linux/Mac\"\n    }\n\nNingún valor debe quedar vacío ni con texto genérico.\n\n5. Edita el archivo `README.md` y agrega la siguiente información:\n\n# Información del estudiante\n\n- Nombre completo:\n- Usuario de GitHub:\n- Sistema operativo usado:\n\n## Declaración de uso de IA\n\n### Práctica 0\n\n- Uso de IA: sí/no\n- Utilización: describe brevemente para qué la usaste. Si no usaste IA, escribe \"No utilicé IA\".\n\n6. Realiza al menos un commit con tus cambios.\n\n7. Sube tus cambios al repositorio remoto.\n\n8. Verifica el estado de la entrega en Classroom 50.\n\n## Restricciones\n\nNo cambies los nombres solicitados para la carpeta, el archivo o la función.\n\nLa ruta esperada del archivo principal es `practica_00/setup_check.py`.",
+      "description": "# Práctica 0: Entorno de trabajo\n\n## Objetivo\n\nVerificar que se tiene listo el entorno mínimo de trabajo para el curso: Python, Conda, VS Code, Git, GitHub y Classroom 50.\n\nEsta práctica no evalúa algoritmos. Evalúa que puedas clonar un repositorio, crear archivos, escribir una función sencilla, documentar tu entorno, hacer commit, subir tus cambios y verificar la entrega.\n\n## Instrucciones\n\n1. Clona el repositorio de esta práctica en tu computadora.\n\n2. Dentro del repositorio, crea una carpeta llamada `practica_00`.\n\n3. Dentro de `practica_00`, crea un archivo llamado `setup_check.py`.\n\n4. En `setup_check.py`, implementa la función `student_info()`.\n\nLa función debe regresar un diccionario con las siguientes llaves:\n\n- `\"student_name\"`\n- `\"github_user\"`\n- `\"python_version\"`\n- `\"editor\"`\n- `\"os\"`\n\nEjemplo de estructura esperada:\n\ndef student_info():\n    return {\n        \"student_name\": \"Nombre completo\",\n        \"github_user\": \"usuario_github\",\n        \"python_version\": \"3.11\",\n        \"editor\": \"VS Code\",\n        \"os\": \"Windows/Linux/Mac\"\n    }\n\nNingún valor debe quedar vacío ni con texto genérico.\n\n5. Edita el archivo `README.md` y agrega la siguiente información:\n\n# Información del estudiante\n\n- Nombre completo:\n- Usuario de GitHub:\n- Sistema operativo usado:\n\n## Declaración de uso de IA\n\n### Práctica 0\n\n- Uso de IA: sí/no\n- Utilización: describe brevemente para qué la usaste. Si no usaste IA, escribe \"No utilicé IA\".\n\n6. Realiza al menos un commit con tus cambios.\n\n7. Sube tus cambios al repositorio remoto.\n\n8. Verifica el estado de la entrega en Classroom 50.\n\n## Restricciones\n\nNo cambies los nombres solicitados para la carpeta, el archivo o la función.\n\nLa ruta esperada del archivo principal es `practica_00/setup_check.py`.\n\n## Límite de envíos\n\nSolo se permiten 3 envíos para esta práctica.",
       "due": "2026-08-04T18:00:00Z",
       "due_meta": {
         "input": "2026-08-04T12:00:00",
@@ -19,10 +19,26 @@
         {
           "name": "sanity_check",
           "type": "io",
-          "run": "python3 -c \"from practica_00.setup_check import student_info; info = student_info(); required = {'student_name', 'github_user', 'python_version', 'editor', 'os'}; assert isinstance(info, dict); assert required <= set(info.keys()); print('OK')\"",
+          "run": "python3 -c \"from practica_00.setup_check import student_info; info = student_info(); required = {'student_name', 'github_user', 'python_version', 'editor', 'os'}; assert isinstance(info, dict), 'student_info debe regresar un diccionario'; assert required <= set(info.keys()), 'faltan llaves requeridas'; print('ok')\"",
           "points": 1,
-          "comparison": "included",
-          "expected": "OK"
+          "comparison": "exact",
+          "expected": "ok"
+        },
+        {
+          "name": "basic_check",
+          "type": "io",
+          "run": "python3 -c \"from practica_00.setup_check import student_info; info = student_info(); required = ['student_name', 'github_user', 'python_version', 'editor', 'os']; placeholders = {'Nombre completo', 'usuario_github', 'Windows/Linux/Mac'}; assert all(isinstance(info[k], str) for k in required), 'todos los valores deben ser strings'; assert all(info[k].strip() for k in required), 'no debe haber valores vacios'; assert all(info[k].strip() not in placeholders for k in required), 'no dejes textos genericos del ejemplo'; print('ok')\"",
+          "points": 5,
+          "comparison": "exact",
+          "expected": "ok"
+        },
+        {
+          "name": "edge_check",
+          "type": "io",
+          "run": "python3 -c \"from pathlib import Path; p = Path('README.md'); assert p.exists(), 'falta README.md'; txt = p.read_text(encoding='utf-8'); required = ['Información del estudiante', 'Nombre completo', 'Usuario de GitHub', 'Sistema operativo usado', 'Declaración de uso de IA', 'Uso de IA', 'Utilización']; assert all(x in txt for x in required), 'README incompleto'; print('ok')\"",
+          "points": 4,
+          "comparison": "exact",
+          "expected": "ok"
         }
       ]
     }
