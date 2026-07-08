@@ -35,7 +35,7 @@
         {
           "name": "edge_check",
           "type": "io",
-          "run": "python3 -c \"from pathlib import Path; import re; p = Path('README.md'); assert p.exists(), 'falta README.md'; txt = p.read_text(encoding='utf-8'); labels = ['Nombre completo', 'Usuario de GitHub', 'Sistema operativo usado', 'Uso de IA', 'Utilización']; missing = []; empty = []; [missing.append(label) if not re.search(r'(?im)^\\s*-?\\s*' + re.escape(label) + r'\\s*:\\s*(.*?)\\s*$', txt) else empty.append(label) if not re.search(r'(?im)^\\s*-?\\s*' + re.escape(label) + r'\\s*:\\s*(.*?)\\s*$', txt).group(1).strip() else None for label in labels]; assert not missing, 'faltan campos en README.md: ' + ', '.join(missing); assert not empty, 'hay campos vacios en README.md: ' + ', '.join(empty); print('OK')\"",
+          "run": "python3 -c \"from pathlib import Path; import re; p = Path('README.md'); assert p.exists(), 'falta README.md'; txt = p.read_text(encoding='utf-8'); labels = ['Nombre completo', 'Usuario de GitHub', 'Sistema operativo usado', 'Uso de IA', 'Utilización']; missing = []; empty = []; [missing.append(label) if not re.search(r'(?im)^\\s*-?\\s*' + re.escape(label) + r'\\s*:\\s*(.*?)\\s*$', txt) else empty.append(label) if not re.search(r'(?im)^\\s*-?\\s*' + re.escape(label) + r'\\s*:\\s*(.*?)\\s*$', txt).group(1).strip() else None for label in labels]; assert not missing, 'faltan campos en README.md: ' + ', '.join(missing); assert not empty, 'hay campos vacios en README.md: ' + ', '.join(empty); print('ok')\"",
           "points": 4,
           "comparison": "exact",
           "expected": "ok"
