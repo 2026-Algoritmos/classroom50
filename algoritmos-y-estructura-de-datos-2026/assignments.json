@@ -41,6 +41,20 @@
           "expected": "ok"
         }
       ]
+    },
+    {
+      "slug": "practica-1",
+      "name": "Practica 1",
+      "mode": "individual",
+      "autograder": "default",
+      "feedback_pr": true,
+      "due": "2026-07-17T00:32:00Z",
+      "due_meta": {
+        "input": "2026-07-16T18:32:00",
+        "zone": "America/Mexico_City",
+        "offset": "-06:00",
+        "source": "auto-detected"
+      }
     }
   ]
 }
