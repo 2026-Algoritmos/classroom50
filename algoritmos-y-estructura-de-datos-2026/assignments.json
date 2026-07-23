@@ -2,20 +2,6 @@
   "schema": "classroom50/assignments/v1",
   "assignments": [
     {
-      "slug": "practica-1",
-      "name": "Practica 1",
-      "mode": "individual",
-      "autograder": "default",
-      "feedback_pr": true,
-      "due": "2026-07-17T00:32:00Z",
-      "due_meta": {
-        "input": "2026-07-16T18:32:00",
-        "zone": "America/Mexico_City",
-        "offset": "-06:00",
-        "source": "auto-detected"
-      }
-    },
-    {
       "slug": "practica-0",
       "name": "Practica 0",
       "mode": "individual",
@@ -51,6 +37,31 @@
           "type": "io",
           "run": "python3 -c \"from pathlib import Path; import re; p = Path('README.md'); assert p.exists(), 'falta README.md'; txt = p.read_text(encoding='utf-8'); labels = ['Nombre completo', 'Usuario de GitHub', 'Sistema operativo usado', 'Uso de IA', 'Utilización']; missing = []; empty = []; [missing.append(label) if not (m := re.search(r'(?im)^[ \\t]*[-*]?[ \\t]*' + re.escape(label) + r'[ \\t]*:[ \\t]*([^\\r\\n]*)[ \\t]*$', txt)) else empty.append(label) if not m.group(1).strip() else None for label in labels]; assert not missing, 'faltan campos en README.md: ' + ', '.join(missing); assert not empty, 'hay campos vacios en README.md: ' + ', '.join(empty); print('ok')\"",
           "points": 4,
+          "comparison": "exact",
+          "expected": "ok"
+        }
+      ]
+    },
+    {
+      "slug": "practica-1",
+      "name": "Practica 1",
+      "mode": "individual",
+      "autograder": "default",
+      "feedback_pr": true,
+      "description": "# Práctica 1: TDA Rational\n\n## Objetivo\n\nEspecificar e implementar un Tipo de Dato Abstracto llamado `Rational` para representar números racionales.\n\nLa práctica evalúa que puedas diseñar una interfaz clara basada en precondiciones y postcondiciones, mantener invariantes, ocultar la representación interna y usar el algoritmo de Euclides para simplificar fracciones.\n\n## Instrucciones\n\n1. Clona el repositorio de esta práctica en tu computadora.\n\n2. Dentro del repositorio, crea una carpeta llamada `practica_01`.\n\n3. Dentro de `practica_01`, crea un archivo llamado `rational.py`.\n\n4. En `rational.py`, implementa una clase llamada `Rational`.\n\n   La clase debe representar números racionales de la forma:\n\n   ```text\n   numerator / denominator\n   ```\n\n5. Puedes implementar una función auxiliar interna llamada `_mcd(a, b)` para calcular el MCD mediante el algoritmo de Euclides. Esta función no forma parte de la interfaz pública del TDA.\n\n\n6. La clase `Rational` debe tener la siguiente interfaz pública:\n\n   ```python\n   Rational(numerator, denominator)\n        numerator()\n        denominator()\n        add(other)\n        subtract(other)\n   ```\n\n7. Todo objeto `Rational` debe mantener una representación válida y simplificada.\n\n   Para esta práctica, considera las siguientes condiciones:\n\n   - la fracción debe estar simplificada;\n   - el denominador debe ser positivo;\n   - si la fracción es negativa, el signo debe estar en el numerador;\n   - si se intenta crear un racional con denominador cero, debe producir un `ValueError`.\n\n8. Los métodos `add(other)` y `subtract(other)` deben regresar un nuevo objeto de tipo `Rational`.\n\n9. Ejemplo mínimo del comportamiento esperado:\n\n   ```python\n   a = Rational(2, 4)\n   b = Rational(1, 3)\n\n   c = a.add(b)       # 5/6\n   d = a.subtract(b)  # 1/6\n\n   print(c.numerator()) #5\n   print(c.denominator()) #6\n   ```\n\n10. Edita el archivo `README.md` y agrega la siguiente información:\n\n   ```markdown\n   # Práctica 1: TDA Rational\n\n   ## Información del estudiante\n\n   - Nombre completo:\n   - Usuario de GitHub:\n   - Sistema operativo usado:\n\n   ## Declaración de uso de IA\n\n   - Uso de IA: sí/no\n   - Utilización: describe brevemente para qué la usaste. Si no usaste IA, escribe \"No utilicé IA\".\n   ```\n\n11. Empuja tus cambios al repositorio remoto.\n\n12. Verifica el estado de la entrega en Classroom 50.\n\n## Restricciones\n\nNo cambies los nombres solicitados para la carpeta, el archivo, la clase o los métodos públicos.\n\nNo uses la función `math.gcd` ni librerías externas para calcular el máximo común divisor.\n\n## Límite de envíos\n\nSolo se permiten 3 envíos para esta práctica.",
+      "due": "2026-08-17T05:59:00Z",
+      "due_meta": {
+        "input": "2026-08-16T23:59:00",
+        "zone": "America/Mexico_City",
+        "offset": "-06:00",
+        "source": "auto-detected"
+      },
+      "tests": [
+        {
+          "name": "sanity_check",
+          "type": "io",
+          "run": "python3 -c \"from practica_01.rational import Rational; a = Rational(1, 2); b = Rational(1, 3); assert callable(getattr(a, 'numerator', None)), 'falta el metodo numerator()'; assert callable(getattr(a, 'denominator', None)), 'falta el metodo denominator()'; assert callable(getattr(a, 'add', None)), 'falta el metodo add()'; assert callable(getattr(a, 'subtract', None)), 'falta el metodo subtract()'; assert isinstance(a.numerator(), int), 'numerator() debe regresar un int'; assert isinstance(a.denominator(), int), 'denominator() debe regresar un int'; c = a.add(b); d = a.subtract(b); assert isinstance(c, Rational), 'add() debe regresar un Rational'; assert isinstance(d, Rational), 'subtract() debe regresar un Rational'; print('ok')\"",
+          "points": 1,
           "comparison": "exact",
           "expected": "ok"
         }
