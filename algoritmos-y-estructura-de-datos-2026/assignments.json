@@ -40,7 +40,11 @@
           "comparison": "exact",
           "expected": "ok"
         }
-      ]
+      ],
+      "submission_mode": "tag",
+      "grading": {
+        "mode": "auto"
+      }
     },
     {
       "slug": "practica-1",
@@ -81,7 +85,11 @@
           "comparison": "exact",
           "expected": "ok"
         }
-      ]
+      ],
+      "submission_mode": "tag",
+      "grading": {
+        "mode": "auto"
+      }
     }
   ]
 }
