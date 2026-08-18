@@ -117,7 +117,13 @@
             }
           ]
         }
-      ]
+      ],
+      "collected_at": "2026-08-18T04:51:49Z"
+    },
+    "practica-1": {
+      "type": "individual",
+      "entries": [],
+      "collected_at": "2026-08-18T04:51:49Z"
     }
   }
 }
