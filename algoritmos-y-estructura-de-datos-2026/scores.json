@@ -118,12 +118,17 @@
           ]
         }
       ],
-      "collected_at": "2026-08-18T04:51:49Z"
+      "collected_at": "2026-08-19T04:51:53Z"
     },
     "practica-1": {
       "type": "individual",
       "entries": [],
-      "collected_at": "2026-08-18T04:51:49Z"
+      "collected_at": "2026-08-19T04:51:53Z"
+    },
+    "practica-2": {
+      "type": "individual",
+      "entries": [],
+      "collected_at": "2026-08-19T04:51:53Z"
     }
   }
 }
