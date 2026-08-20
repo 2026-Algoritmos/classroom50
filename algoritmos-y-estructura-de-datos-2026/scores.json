@@ -122,7 +122,7 @@
         {
           "owner": "SamuelMarEs",
           "first_name": "Samuel",
-          "last_name": "M\u00e1rquez Estrada",
+          "last_name": "Márquez Estrada",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -606,6 +606,20 @@
               "classroom": "algoritmos-y-estructura-de-datos-2026",
               "assignment_type": "individual",
               "owner": "cedrix0506",
+              "submission": "submit/manual-2026-08-20T22-50-55Z",
+              "commit": "submit/manual-2026-08-20T22-50-55Z",
+              "release": "submit/manual-2026-08-20T22-50-55Z",
+              "review": "submit/manual-2026-08-20T22-50-55Z",
+              "datetime": "2026-08-20T22:50:55Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": []
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "cedrix0506",
               "submission": "submit/2026-08-20T22-24-14Z-c90d034",
               "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-cedrix0506/commit/c90d034888b508f90740cd2c10e863ade6e97341",
               "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-cedrix0506/releases/tag/submit%2F2026-08-20T22-24-14Z-c90d034",
@@ -679,7 +693,8 @@
               },
               "late": false
             }
-          ]
+          ],
+          "override": true
         },
         {
           "owner": "Wolfgang777-alt",
