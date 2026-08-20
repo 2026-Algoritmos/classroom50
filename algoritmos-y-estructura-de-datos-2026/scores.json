@@ -36,6 +36,8 @@
       "entries": [
         {
           "owner": "jorge-test-class",
+          "first_name": "Jorge",
+          "last_name": "Ramirez Tests",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -116,9 +118,1123 @@
               "late": false
             }
           ]
+        },
+        {
+          "owner": "SamuelMarEs",
+          "first_name": "Samuel",
+          "last_name": "M\u00e1rquez Estrada",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "samuelmares",
+              "submission": "submit/2026-08-20T21-30-29Z-0d18b38",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-samuelmares/commit/0d18b38c764db0d4fd3dc992c8eddf40e4850abd",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-samuelmares/releases/tag/submit%2F2026-08-20T21-30-29Z-0d18b38",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-samuelmares/compare/539f8747cb1c160fbcd107a7e7993e4d2fcb8268...0d18b38c764db0d4fd3dc992c8eddf40e4850abd",
+              "datetime": "2026-08-20T21:30:04Z",
+              "graded_at": "2026-08-20T21:30:43Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "SamuelMarEs",
+                "id": 139083158
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "Esperanza201406",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "esperanza201406",
+              "submission": "submit/2026-08-20T22-16-20Z-09f91f1",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-esperanza201406/commit/09f91f127dc6ac05b94e0b702fba3bf24f2cafc9",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-esperanza201406/releases/tag/submit%2F2026-08-20T22-16-20Z-09f91f1",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-esperanza201406/compare/3c516056c4536e24a56fe889f3bcdc41d9ea6d73...09f91f127dc6ac05b94e0b702fba3bf24f2cafc9",
+              "datetime": "2026-08-20T22:04:10Z",
+              "graded_at": "2026-08-20T22:16:33Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "Esperanza201406",
+                "id": 189322195
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "AmeliaDi",
+          "first_name": "AmeliaDi",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "ameliadi",
+              "submission": "submit/2026-08-20T21-44-26Z-4bba620",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ameliadi/commit/4bba6200e07121bbe9874e61c454610b967f62af",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ameliadi/releases/tag/submit%2F2026-08-20T21-44-26Z-4bba620",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ameliadi/compare/f38d30507fe43f0f894fd461b110891f5f0fae09...4bba6200e07121bbe9874e61c454610b967f62af",
+              "datetime": "2026-08-20T21:44:10Z",
+              "graded_at": "2026-08-20T21:44:40Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "AmeliaDi",
+                "id": 206281947
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "basurtoemiliano60-boop",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "basurtoemiliano60-boop",
+              "submission": "submit/2026-08-20T22-26-33Z-9bf2db6",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-basurtoemiliano60-boop/commit/9bf2db6ca0aa0c5cace42ab547338a732058f522",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-basurtoemiliano60-boop/releases/tag/submit%2F2026-08-20T22-26-33Z-9bf2db6",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-basurtoemiliano60-boop/compare/8896a34e30cdb592f525f080b8a28e867c793abf...9bf2db6ca0aa0c5cace42ab547338a732058f522",
+              "datetime": "2026-08-20T22:25:29Z",
+              "graded_at": "2026-08-20T22:26:48Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "basurtoemiliano60-boop",
+                "id": 235819192
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "javierjimenezdiaz718-cmyk",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "javierjimenezdiaz718-cmyk",
+              "submission": "submit/2026-08-20T22-35-26Z-cb18e7d",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-javierjimenezdiaz718-cmyk/commit/cb18e7d2d27dba3945ec4e14a081a5e601342ce4",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-javierjimenezdiaz718-cmyk/releases/tag/submit%2F2026-08-20T22-35-26Z-cb18e7d",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-javierjimenezdiaz718-cmyk/compare/34bbc280006da59631619d66d6c49dff405f6ab1...cb18e7d2d27dba3945ec4e14a081a5e601342ce4",
+              "datetime": "2026-08-20T22:34:59Z",
+              "graded_at": "2026-08-20T22:35:39Z",
+              "score": 6,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "javierjimenezdiaz718-cmyk",
+                "id": 241067909
+              },
+              "late": false
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "javierjimenezdiaz718-cmyk",
+              "submission": "submit/2026-08-20T22-31-43Z-c70d30e",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-javierjimenezdiaz718-cmyk/commit/c70d30ed8c4bf65811dbbb38eb5a2e2a6aee487d",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-javierjimenezdiaz718-cmyk/releases/tag/submit%2F2026-08-20T22-31-43Z-c70d30e",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-javierjimenezdiaz718-cmyk/compare/34bbc280006da59631619d66d6c49dff405f6ab1...c70d30ed8c4bf65811dbbb38eb5a2e2a6aee487d",
+              "datetime": "2026-08-20T22:30:51Z",
+              "graded_at": "2026-08-20T22:31:59Z",
+              "score": 6,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "javierjimenezdiaz718-cmyk",
+                "id": 241067909
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "GeroChavez",
+          "first_name": "GeroChavez",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "gerochavez",
+              "submission": "submit/2026-08-20T21-48-46Z-48adcb8",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-gerochavez/commit/48adcb897133b04a6a0b2b56875e09f37e295161",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-gerochavez/releases/tag/submit%2F2026-08-20T21-48-46Z-48adcb8",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-gerochavez/compare/a86199c5d9bd97968383308ccf100b869970f654...48adcb897133b04a6a0b2b56875e09f37e295161",
+              "datetime": "2026-08-20T21:48:02Z",
+              "graded_at": "2026-08-20T21:48:59Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "GeroChavez",
+                "id": 241238688
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "ealmarazgon",
+          "first_name": "PAN.",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "ealmarazgon",
+              "submission": "submit/2026-08-20T21-36-50Z-8922991",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ealmarazgon/commit/8922991b01bb0f49d3416621058abd3f6d9a2598",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ealmarazgon/releases/tag/submit%2F2026-08-20T21-36-50Z-8922991",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ealmarazgon/compare/83ae7911efa0f304d957927c29d7627bbcb3de2a...8922991b01bb0f49d3416621058abd3f6d9a2598",
+              "datetime": "2026-08-20T21:36:26Z",
+              "graded_at": "2026-08-20T21:37:06Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "ealmarazgon",
+                "id": 243919594
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "ale488570-debug",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "ale488570-debug",
+              "submission": "submit/2026-08-20T22-14-06Z-ea31664",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ale488570-debug/commit/ea3166403b2d4dabf11820852cf5cbc8349b9157",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ale488570-debug/releases/tag/submit%2F2026-08-20T22-14-06Z-ea31664",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ale488570-debug/compare/03e07a797d50bb888af0997d8475b92bd83d23e4...ea3166403b2d4dabf11820852cf5cbc8349b9157",
+              "datetime": "2026-08-20T22:13:52Z",
+              "graded_at": "2026-08-20T22:14:25Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "ale488570-debug",
+                "id": 244108478
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "franciscosanaphre-lab",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "franciscosanaphre-lab",
+              "submission": "submit/2026-08-20T22-03-42Z-e029830",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-franciscosanaphre-lab/commit/e0298301959b760c758c530e0c8891bff8267aa6",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-franciscosanaphre-lab/releases/tag/submit%2F2026-08-20T22-03-42Z-e029830",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-franciscosanaphre-lab/compare/d833b58cacbc4d8757d35d6c1a6e874bbbe74d70...e0298301959b760c758c530e0c8891bff8267aa6",
+              "datetime": "2026-08-20T22:03:21Z",
+              "graded_at": "2026-08-20T22:03:56Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "franciscosanaphre-lab",
+                "id": 245077589
+              },
+              "late": false
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "franciscosanaphre-lab",
+              "submission": "submit/2026-08-20T22-00-08Z-1360570",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-franciscosanaphre-lab/commit/136057076d62fd78cac026f25c0cd86d25534d3c",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-franciscosanaphre-lab/releases/tag/submit%2F2026-08-20T22-00-08Z-1360570",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-franciscosanaphre-lab/compare/d833b58cacbc4d8757d35d6c1a6e874bbbe74d70...136057076d62fd78cac026f25c0cd86d25534d3c",
+              "datetime": "2026-08-20T21:58:21Z",
+              "graded_at": "2026-08-20T22:00:22Z",
+              "score": 5,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "franciscosanaphre-lab",
+                "id": 245077589
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "cedrix0506",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "cedrix0506",
+              "submission": "submit/2026-08-20T22-24-14Z-c90d034",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-cedrix0506/commit/c90d034888b508f90740cd2c10e863ade6e97341",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-cedrix0506/releases/tag/submit%2F2026-08-20T22-24-14Z-c90d034",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-cedrix0506/compare/63d548043dbe3d3848f95b408a7b66787232b8d5...c90d034888b508f90740cd2c10e863ade6e97341",
+              "datetime": "2026-08-20T22:23:55Z",
+              "graded_at": "2026-08-20T22:42:38Z",
+              "score": 4,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "cedrix0506",
+                "id": 263970917
+              },
+              "late": false
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "cedrix0506",
+              "submission": "submit/2026-08-20T22-05-03Z-db2b588",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-cedrix0506/commit/db2b588e28c83744daeed29d6fce1ceee5b16e50",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-cedrix0506/releases/tag/submit%2F2026-08-20T22-05-03Z-db2b588",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-cedrix0506/compare/63d548043dbe3d3848f95b408a7b66787232b8d5...db2b588e28c83744daeed29d6fce1ceee5b16e50",
+              "datetime": "2026-08-20T22:04:33Z",
+              "graded_at": "2026-08-20T22:05:19Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "cedrix0506",
+                "id": 263970917
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "Wolfgang777-alt",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "wolfgang777-alt",
+              "submission": "submit/2026-08-20T22-28-53Z-ec83a3f",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-wolfgang777-alt/commit/ec83a3f63fb04816910e1758b1874fffa41d4913",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-wolfgang777-alt/releases/tag/submit%2F2026-08-20T22-28-53Z-ec83a3f",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-wolfgang777-alt/compare/b3814b33f1cb156d27e797475967b988a9ae02ec...ec83a3f63fb04816910e1758b1874fffa41d4913",
+              "datetime": "2026-08-20T22:28:20Z",
+              "graded_at": "2026-08-20T22:29:09Z",
+              "score": 4,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "Wolfgang777-alt",
+                "id": 267213648
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "danielesdomf-gif",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "danielesdomf-gif",
+              "submission": "submit/2026-08-20T21-51-55Z-b5bb6c0",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-danielesdomf-gif/commit/b5bb6c0606ee65beb917d2bd3a8fab92f44f85f6",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-danielesdomf-gif/releases/tag/submit%2F2026-08-20T21-51-55Z-b5bb6c0",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-danielesdomf-gif/compare/846a22013f0da2e1994ac81b1f45fad69e27e40b...b5bb6c0606ee65beb917d2bd3a8fab92f44f85f6",
+              "datetime": "2026-08-20T21:51:09Z",
+              "graded_at": "2026-08-20T21:52:10Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "danielesdomf-gif",
+                "id": 267546545
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "amalie82",
+          "first_name": "mmat",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "amalie82",
+              "submission": "submit/2026-08-20T22-07-28Z-405ef79",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-amalie82/commit/405ef797e06f8c5b1dc1003b19132a356d1c3cf5",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-amalie82/releases/tag/submit%2F2026-08-20T22-07-28Z-405ef79",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-amalie82/compare/444a64548ecd33fbe60b4d11dd942deba67f61ab...405ef797e06f8c5b1dc1003b19132a356d1c3cf5",
+              "datetime": "2026-08-20T22:06:49Z",
+              "graded_at": "2026-08-20T22:07:42Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "amalie82",
+                "id": 270055725
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "eligranados007",
+          "first_name": "Xx_Eli_Granados_Chavez_xX",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "eligranados007",
+              "submission": "submit/2026-08-20T22-25-18Z-23977d0",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-eligranados007/commit/23977d0363754b9dc68f5ecf12753278b64354b8",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-eligranados007/releases/tag/submit%2F2026-08-20T22-25-18Z-23977d0",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-eligranados007/compare/99863283f578faa7253c5f8c8ad5e805b5b9b608...23977d0363754b9dc68f5ecf12753278b64354b8",
+              "datetime": "2026-08-20T22:24:36Z",
+              "graded_at": "2026-08-20T22:25:32Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "eligranados007",
+                "id": 270519637
+              },
+              "late": false
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "eligranados007",
+              "submission": "submit/2026-08-20T22-16-13Z-ce40eb3",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-eligranados007/commit/ce40eb37520c96c8ac0d5894a2c410d364720501",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-eligranados007/releases/tag/submit%2F2026-08-20T22-16-13Z-ce40eb3",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-eligranados007/compare/99863283f578faa7253c5f8c8ad5e805b5b9b608...ce40eb37520c96c8ac0d5894a2c410d364720501",
+              "datetime": "2026-08-20T22:15:37Z",
+              "graded_at": "2026-08-20T22:16:24Z",
+              "score": 0,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "eligranados007",
+                "id": 270519637
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "mariadelcarmen270767-ux",
+          "first_name": "Keily",
+          "last_name": "Romo",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "mariadelcarmen270767-ux",
+              "submission": "submit/2026-08-20T22-07-07Z-cdaeafe",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-mariadelcarmen270767-ux/commit/cdaeafe855ba723106f1f32ba246df03c2b0fe69",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-mariadelcarmen270767-ux/releases/tag/submit%2F2026-08-20T22-07-07Z-cdaeafe",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-mariadelcarmen270767-ux/compare/555d9c6ff8ff870ad3db821b0bfe407c91853da0...cdaeafe855ba723106f1f32ba246df03c2b0fe69",
+              "datetime": "2026-08-20T22:06:39Z",
+              "graded_at": "2026-08-20T22:07:21Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "mariadelcarmen270767-ux",
+                "id": 270672045
+              },
+              "late": false
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "mariadelcarmen270767-ux",
+              "submission": "submit/2026-08-20T22-00-24Z-64bd364",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-mariadelcarmen270767-ux/commit/64bd364be7304ec43b6431f9702ab472c5eb3a42",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-mariadelcarmen270767-ux/releases/tag/submit%2F2026-08-20T22-00-24Z-64bd364",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-mariadelcarmen270767-ux/compare/555d9c6ff8ff870ad3db821b0bfe407c91853da0...64bd364be7304ec43b6431f9702ab472c5eb3a42",
+              "datetime": "2026-08-20T21:59:57Z",
+              "graded_at": "2026-08-20T22:00:41Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "mariadelcarmen270767-ux",
+                "id": 270672045
+              },
+              "late": false
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "mariadelcarmen270767-ux",
+              "submission": "submit/2026-08-20T21-55-20Z-2070177",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-mariadelcarmen270767-ux/commit/207017776e85c8d56e2bb73973ae8dbc7e1e8f1a",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-mariadelcarmen270767-ux/releases/tag/submit%2F2026-08-20T21-55-20Z-2070177",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-mariadelcarmen270767-ux/compare/555d9c6ff8ff870ad3db821b0bfe407c91853da0...207017776e85c8d56e2bb73973ae8dbc7e1e8f1a",
+              "datetime": "2026-08-20T21:54:12Z",
+              "graded_at": "2026-08-20T21:55:35Z",
+              "score": 6,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "mariadelcarmen270767-ux",
+                "id": 270672045
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "hamasb",
+          "first_name": "Phamas_BO",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "hamasb",
+              "submission": "submit/2026-08-20T22-21-59Z-02cf481",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-hamasb/commit/02cf4817a951a896be613571d90e34e16a3143ac",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-hamasb/releases/tag/submit%2F2026-08-20T22-21-59Z-02cf481",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-hamasb/compare/4e043e4ed7988b843021d3a8ef6a54df50d53c47...02cf4817a951a896be613571d90e34e16a3143ac",
+              "datetime": "2026-08-20T22:21:24Z",
+              "graded_at": "2026-08-20T22:22:14Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "hamasb",
+                "id": 270709663
+              },
+              "late": false
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "hamasb",
+              "submission": "submit/2026-08-20T22-06-25Z-cf2eb59",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-hamasb/commit/cf2eb59b86df7fbaebf6aab1685c57db91f59f56",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-hamasb/releases/tag/submit%2F2026-08-20T22-06-25Z-cf2eb59",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-hamasb/compare/4e043e4ed7988b843021d3a8ef6a54df50d53c47...cf2eb59b86df7fbaebf6aab1685c57db91f59f56",
+              "datetime": "2026-08-20T22:04:37Z",
+              "graded_at": "2026-08-20T22:06:37Z",
+              "score": 6,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "hamasb",
+                "id": 270709663
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "hormiguita2",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "hormiguita2",
+              "submission": "submit/2026-08-20T22-01-25Z-a2bcabd",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-hormiguita2/commit/a2bcabdf0fee1340041b256bc7f9e10b8dfa74c3",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-hormiguita2/releases/tag/submit%2F2026-08-20T22-01-25Z-a2bcabd",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-hormiguita2/compare/3250ffe69ffcec34b235b2688aed84e8368acf32...a2bcabdf0fee1340041b256bc7f9e10b8dfa74c3",
+              "datetime": "2026-08-20T22:01:05Z",
+              "graded_at": "2026-08-20T22:01:37Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "hormiguita2",
+                "id": 280249535
+              },
+              "late": false
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "hormiguita2",
+              "submission": "submit/2026-08-20T22-00-23Z-1513db7",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-hormiguita2/commit/1513db71cba628b44b21024f013e488c0b37b1f8",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-hormiguita2/releases/tag/submit%2F2026-08-20T22-00-23Z-1513db7",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-hormiguita2/compare/3250ffe69ffcec34b235b2688aed84e8368acf32...1513db71cba628b44b21024f013e488c0b37b1f8",
+              "datetime": "2026-08-20T21:58:08Z",
+              "graded_at": "2026-08-20T22:00:34Z",
+              "score": 4,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "hormiguita2",
+                "id": 280249535
+              },
+              "late": false
+            }
+          ]
+        },
+        {
+          "owner": "emontanovaazquez-hue",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "emontanovaazquez-hue",
+              "submission": "submit/2026-08-20T22-14-34Z-f056311",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-emontanovaazquez-hue/commit/f056311c8a6b448187a62717168df63c6242d61b",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-emontanovaazquez-hue/releases/tag/submit%2F2026-08-20T22-14-34Z-f056311",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-emontanovaazquez-hue/compare/786c23a472f69477c2e811081d30827c35342f3d...f056311c8a6b448187a62717168df63c6242d61b",
+              "datetime": "2026-08-20T22:13:55Z",
+              "graded_at": "2026-08-20T22:14:47Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "emontanovaazquez-hue",
+                "id": 318408015
+              },
+              "late": false
+            }
+          ]
         }
       ],
-      "collected_at": "2026-08-20T04:53:29Z"
+      "collected_at": "2026-08-20T22:50:20Z"
     },
     "practica-1": {
       "type": "individual",
