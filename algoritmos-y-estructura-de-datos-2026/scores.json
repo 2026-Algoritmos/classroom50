@@ -122,7 +122,7 @@
         {
           "owner": "SamuelMarEs",
           "first_name": "Samuel",
-          "last_name": "Márquez Estrada",
+          "last_name": "M\u00e1rquez Estrada",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -474,6 +474,123 @@
         {
           "owner": "ale488570-debug",
           "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "ale488570-debug",
+              "submission": "submit/2026-08-20T22-57-32Z-1762172",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ale488570-debug/commit/17621723d8d8b6afc1a171674ce13bbcec8af746",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ale488570-debug/releases/tag/submit%2F2026-08-20T22-57-32Z-1762172",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ale488570-debug/compare/03e07a797d50bb888af0997d8475b92bd83d23e4...17621723d8d8b6afc1a171674ce13bbcec8af746",
+              "datetime": "2026-08-20T22:57:13Z",
+              "graded_at": "2026-08-20T22:57:47Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "ale488570-debug",
+                "id": 244108478
+              },
+              "late": false
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "ale488570-debug",
+              "submission": "submit/2026-08-20T22-56-39Z-dcfa345",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ale488570-debug/commit/dcfa345cc86a3f3579b298fd14bfcd2f5bab6144",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ale488570-debug/releases/tag/submit%2F2026-08-20T22-56-39Z-dcfa345",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ale488570-debug/compare/03e07a797d50bb888af0997d8475b92bd83d23e4...dcfa345cc86a3f3579b298fd14bfcd2f5bab6144",
+              "datetime": "2026-08-20T22:56:26Z",
+              "graded_at": "2026-08-20T22:56:52Z",
+              "score": 4,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "ale488570-debug",
+                "id": 244108478
+              },
+              "late": false
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "ale488570-debug",
+              "submission": "submit/2026-08-20T22-54-08Z-e752843",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ale488570-debug/commit/e7528431442e7703155031fc2318b86e57991960",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ale488570-debug/releases/tag/submit%2F2026-08-20T22-54-08Z-e752843",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-ale488570-debug/compare/03e07a797d50bb888af0997d8475b92bd83d23e4...e7528431442e7703155031fc2318b86e57991960",
+              "datetime": "2026-08-20T22:53:51Z",
+              "graded_at": "2026-08-20T22:54:21Z",
+              "score": 4,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "ale488570-debug",
+                "id": 244108478
+              },
+              "late": false
+            },
             {
               "schema": "classroom50/result/v1",
               "classroom": "algoritmos-y-estructura-de-datos-2026",
@@ -1249,7 +1366,7 @@
           ]
         }
       ],
-      "collected_at": "2026-08-20T22:50:20Z"
+      "collected_at": "2026-08-21T16:38:25Z"
     },
     "practica-1": {
       "type": "individual",
