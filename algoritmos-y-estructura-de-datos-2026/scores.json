@@ -821,6 +821,84 @@
               "classroom": "algoritmos-y-estructura-de-datos-2026",
               "assignment_type": "individual",
               "owner": "wolfgang777-alt",
+              "submission": "submit/2026-08-21T19-42-49Z-2484244",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-wolfgang777-alt/commit/2484244fe8ca5beb4baa8d2d3abf8960f702e714",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-wolfgang777-alt/releases/tag/submit%2F2026-08-21T19-42-49Z-2484244",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-wolfgang777-alt/compare/b3814b33f1cb156d27e797475967b988a9ae02ec...2484244fe8ca5beb4baa8d2d3abf8960f702e714",
+              "datetime": "2026-08-21T19:42:29Z",
+              "graded_at": "2026-08-21T19:43:02Z",
+              "score": 4,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "Wolfgang777-alt",
+                "id": 267213648
+              },
+              "late": true
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "wolfgang777-alt",
+              "submission": "submit/2026-08-21T19-34-09Z-6b7b307",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-wolfgang777-alt/commit/6b7b3077d9002226513ec8a17ef81832f864dc4b",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-wolfgang777-alt/releases/tag/submit%2F2026-08-21T19-34-09Z-6b7b307",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-wolfgang777-alt/compare/b3814b33f1cb156d27e797475967b988a9ae02ec...6b7b3077d9002226513ec8a17ef81832f864dc4b",
+              "datetime": "2026-08-21T19:33:43Z",
+              "graded_at": "2026-08-21T19:34:24Z",
+              "score": 4,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": true,
+                  "score": 4,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "Wolfgang777-alt",
+                "id": 267213648
+              },
+              "late": true
+            },
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "wolfgang777-alt",
               "submission": "submit/2026-08-20T22-28-53Z-ec83a3f",
               "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-wolfgang777-alt/commit/ec83a3f63fb04816910e1758b1874fffa41d4913",
               "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-wolfgang777-alt/releases/tag/submit%2F2026-08-20T22-28-53Z-ec83a3f",
@@ -1366,7 +1444,7 @@
           ]
         }
       ],
-      "collected_at": "2026-08-21T16:38:25Z"
+      "collected_at": "2026-08-24T16:00:46Z"
     },
     "practica-1": {
       "type": "individual",
