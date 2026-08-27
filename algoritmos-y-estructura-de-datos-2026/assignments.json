@@ -75,7 +75,7 @@
         {
           "name": "sanity_check",
           "type": "io",
-          "run": "python3 -c \"from practica_00.setup_check import student_info; info = student_info(); required = {'student_name', 'github_user', 'python_version', 'editor', 'os'}; assert isinstance(info, dict), 'student_info debe regresar un diccionario'; assert required <= set(info.keys()), 'faltan llaves requeridas'; print('ok')\"",
+          "run": "python3 -c \"from practica_01.rational import Rational; a = Rational(1, 2); b = Rational(1, 3); assert callable(getattr(a, 'numerator', None)), 'falta el metodo numerator()'; assert callable(getattr(a, 'denominator', None)), 'falta el metodo denominator()'; assert callable(getattr(a, 'add', None)), 'falta el metodo add()'; assert callable(getattr(a, 'subtract', None)), 'falta el metodo subtract()'; assert isinstance(a.numerator(), int), 'numerator() debe regresar un int'; assert isinstance(a.denominator(), int), 'denominator() debe regresar un int'; c = a.add(b); d = a.subtract(b); assert isinstance(c, Rational), 'add() debe regresar un Rational'; assert isinstance(d, Rational), 'subtract() debe regresar un Rational'; print('ok')\"",
           "points": 1,
           "comparison": "exact",
           "expected": "ok"
@@ -83,7 +83,7 @@
         {
           "name": "basic_check",
           "type": "io",
-          "run": "python3 -c \"from practica_00.setup_check import student_info; info = student_info(); required = ['student_name', 'github_user', 'python_version', 'editor', 'os']; placeholders = {'Nombre completo', 'usuario_github', 'Windows/Linux/Mac'}; assert all(isinstance(info[k], str) for k in required), 'todos los valores deben ser strings'; assert all(info[k].strip() for k in required), 'no debe haber valores vacios'; assert all(info[k].strip() not in placeholders for k in required), 'no dejes textos genericos del ejemplo'; print('ok')\"",
+          "run": "python3 -c \"from practica_01.rational import Rational; a = Rational(1, 10); b = Rational(2, 4); c1 = a.add(b); c2 = b.add(a); d1 = a.subtract(b); d2 = b.subtract(a); e = c2.add(d2); x = Rational(1, 3); y = Rational(1, 4); z = x.add(y); w = x.subtract(y); assert a.numerator() == 1, 'numerador incorrecto'; assert a.denominator() == 10, 'denominador incorrecto'; assert b.numerator() == 1, 'numerador incorrecto'; assert b.denominator() == 2, 'denominador incorrecto'; assert c1.numerator() == 3, 'numerador incorrecto'; assert c1.denominator() == 5, 'denominador incorrecto'; assert c2.numerator() == 3, 'numerador incorrecto'; assert c2.denominator() == 5, 'denominador incorrecto'; assert d1.numerator() == -2, 'numerador incorrecto'; assert d1.denominator() == 5, 'denominador incorrecto'; assert d2.numerator() == 2, 'numerador incorrecto'; assert d2.denominator() == 5, 'denominador incorrecto'; assert e.numerator() == 1, 'numerador incorrecto'; assert e.denominator() == 1, 'denominador incorrecto'; assert z.numerator() == 7, 'numerador incorrecto'; assert z.denominator() == 12, 'denominador incorrecto'; assert w.numerator() == 1, 'numerador incorrecto'; assert w.denominator() == 12, 'denominador incorrecto'; print('ok')\"",
           "points": 5,
           "comparison": "exact",
           "expected": "ok"
@@ -91,7 +91,7 @@
         {
           "name": "edge_check",
           "type": "io",
-          "run": "python3 -c \"from pathlib import Path; import re; p = Path('README.md'); assert p.exists(), 'falta README.md'; txt = p.read_text(encoding='utf-8'); labels = ['Nombre completo', 'Usuario de GitHub', 'Sistema operativo usado', 'Uso de IA', 'Utilización']; missing = []; empty = []; [missing.append(label) if not (m := re.search(r'(?im)^[ \\t]*[-*]?[ \\t]*' + re.escape(label) + r'[ \\t]*:[ \\t]*([^\\r\\n]*)[ \\t]*$', txt)) else empty.append(label) if not m.group(1).strip() else None for label in labels]; assert not missing, 'faltan campos en README.md: ' + ', '.join(missing); assert not empty, 'hay campos vacios en README.md: ' + ', '.join(empty); print('ok')\"",
+          "run": "python3 -c \"from practica_01.rational import Rational; a = Rational(0, 25); b = Rational(5, 7); c = b.subtract(b); h = Rational(12, -16); i = Rational(-12, -16); r = Rational(462, 1071); assert a.numerator() == 0, 'numerador incorrecto'; assert a.denominator() == 1, 'denominador incorrecto'; assert b.numerator() == 5, 'numerador incorrecto'; assert b.denominator() == 7, 'denominador incorrecto'; assert c.numerator() == 0, 'numerador incorrecto'; assert c.denominator() == 1, 'denominador incorrecto'; assert h.numerator() == -3, 'numerador incorrecto'; assert h.denominator() == 4, 'denominador incorrecto'; assert i.numerator() == 3, 'numerador incorrecto'; assert i.denominator() == 4, 'denominador incorrecto'; assert r.numerator() == 22, 'numerador incorrecto'; assert r.denominator() == 51, 'denominador incorrecto'; exec('try:\\n    Rational(2, 0)\\nexcept ValueError:\\n    pass\\nelse:\\n    raise AssertionError(\\\"se esperaba ValueError\\\")'); print('ok')\"",
           "points": 4,
           "comparison": "exact",
           "expected": "ok"
