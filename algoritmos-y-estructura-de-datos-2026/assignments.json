@@ -49,6 +49,55 @@
         }
       ],
       "submission_mode": "every-push"
+    },
+    {
+      "slug": "practica-1",
+      "name": "Practica 0",
+      "mode": "individual",
+      "autograder": "default",
+      "feedback_pr": true,
+      "description": "# Práctica 0: Entorno de trabajo\n\n## Objetivo\n\nVerificar que se tiene listo el entorno mínimo de trabajo para el curso: Python, Conda, VS Code, Git, GitHub y Classroom 50.\n\nEsta práctica no evalúa algoritmos. Evalúa que puedas clonar un repositorio, crear archivos, escribir una función sencilla, documentar tu entorno, hacer commit, subir tus cambios y verificar la entrega.\n\n## Instrucciones\n\n1. Clona el repositorio de esta práctica en tu computadora.\n\n2. Dentro del repositorio, crea una carpeta llamada `practica_00`.\n\n3. Dentro de `practica_00`, crea un archivo llamado `setup_check.py`.\n\n4. En `setup_check.py`, implementa la función `student_info()`.\n\n   La función debe regresar un diccionario con las siguientes llaves:\n\n   - `\"student_name\"`\n   - `\"github_user\"`\n   - `\"python_version\"`\n   - `\"editor\"`\n   - `\"os\"`\n\n   Ejemplo de estructura esperada:\n\n   ```python\n   def student_info():\n       return {\n           \"student_name\": \"Nombre completo\",\n           \"github_user\": \"usuario_github\",\n           \"python_version\": \"3.11\",\n           \"editor\": \"VS Code\",\n           \"os\": \"Windows/Linux/Mac\"\n       }\n   ```\n\n   Ningún valor debe quedar vacío ni con texto genérico.\n\n5. Edita el archivo `README.md` y agrega la siguiente información:\n\n   ```markdown\n   # Información del estudiante\n\n   - Nombre completo:\n   - Usuario de GitHub:\n   - Sistema operativo usado:\n\n   ## Declaración de uso de IA\n\n   - Uso de IA: sí/no\n   - Utilización: describe brevemente para qué la usaste. Si no usaste IA, escribe \"No utilicé IA\".\n   ```\n\n6. Realiza al menos un commit con tus cambios.\n\n7. Sube tus cambios al repositorio remoto.\n\n8. Verifica el estado de la entrega en Classroom 50.\n\n## Restricciones\n\nNo cambies los nombres solicitados para la carpeta, el archivo o la función.\n\nLa ruta esperada del archivo principal es:\n\n```text\npractica_00/setup_check.py\n```\n\n## Límite de envíos\n\nSolo se permiten 5 envíos para esta práctica.",
+      "due": "2026-08-20T23:00:00Z",
+      "due_meta": {
+        "input": "2026-08-20T17:00:00",
+        "zone": "America/Mexico_City",
+        "offset": "-06:00",
+        "source": "auto-detected"
+      },
+      "available_from": "2026-08-20T21:00:00Z",
+      "available_from_meta": {
+        "input": "2026-08-20T15:00:00",
+        "zone": "America/Mexico_City",
+        "offset": "-06:00",
+        "source": "auto-detected"
+      },
+      "tests": [
+        {
+          "name": "sanity_check",
+          "type": "io",
+          "run": "python3 -c \"from practica_00.setup_check import student_info; info = student_info(); required = {'student_name', 'github_user', 'python_version', 'editor', 'os'}; assert isinstance(info, dict), 'student_info debe regresar un diccionario'; assert required <= set(info.keys()), 'faltan llaves requeridas'; print('ok')\"",
+          "points": 1,
+          "comparison": "exact",
+          "expected": "ok"
+        },
+        {
+          "name": "basic_check",
+          "type": "io",
+          "run": "python3 -c \"from practica_00.setup_check import student_info; info = student_info(); required = ['student_name', 'github_user', 'python_version', 'editor', 'os']; placeholders = {'Nombre completo', 'usuario_github', 'Windows/Linux/Mac'}; assert all(isinstance(info[k], str) for k in required), 'todos los valores deben ser strings'; assert all(info[k].strip() for k in required), 'no debe haber valores vacios'; assert all(info[k].strip() not in placeholders for k in required), 'no dejes textos genericos del ejemplo'; print('ok')\"",
+          "points": 5,
+          "comparison": "exact",
+          "expected": "ok"
+        },
+        {
+          "name": "edge_check",
+          "type": "io",
+          "run": "python3 -c \"from pathlib import Path; import re; p = Path('README.md'); assert p.exists(), 'falta README.md'; txt = p.read_text(encoding='utf-8'); labels = ['Nombre completo', 'Usuario de GitHub', 'Sistema operativo usado', 'Uso de IA', 'Utilización']; missing = []; empty = []; [missing.append(label) if not (m := re.search(r'(?im)^[ \\t]*[-*]?[ \\t]*' + re.escape(label) + r'[ \\t]*:[ \\t]*([^\\r\\n]*)[ \\t]*$', txt)) else empty.append(label) if not m.group(1).strip() else None for label in labels]; assert not missing, 'faltan campos en README.md: ' + ', '.join(missing); assert not empty, 'hay campos vacios en README.md: ' + ', '.join(empty); print('ok')\"",
+          "points": 4,
+          "comparison": "exact",
+          "expected": "ok"
+        }
+      ],
+      "submission_mode": "every-push"
     }
   ]
 }
