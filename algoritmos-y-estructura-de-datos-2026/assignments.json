@@ -100,21 +100,20 @@
     },
     {
       "slug": "practica-2",
-      "name": "Practica 1",
+      "name": "Practica 2",
       "mode": "individual",
       "autograder": "default",
       "feedback_pr": true,
-      "description": "# Práctica 1: TDA Rational\n\n## Objetivo\n\nImplementar un Tipo de Dato Abstracto llamado `Rational` para representar números racionales a partir de una interfaz y un contrato definidos.\n\nLa práctica evalúa que puedas implementar una interfaz definida mediante precondiciones y postcondiciones, mantener invariantes, ocultar la representación interna y usar el algoritmo de Euclides para simplificar fracciones.\n\n## Instrucciones\n\n1. Clona el repositorio de esta práctica en tu computadora.\n\n2. Dentro del repositorio, crea una carpeta llamada `practica_01`.\n\n3. Dentro de `practica_01`, crea un archivo llamado `rational.py`.\n\n4. En `rational.py`, implementa una clase llamada `Rational`.\n\n   La clase debe representar números racionales de la forma:\n\n   ```text\n   numerator / denominator\n   ```\n\n5. Para simplificar las fracciones, debes calcular el MCD mediante el algoritmo de Euclides. Puedes organizar este cálculo en una función auxiliar interna, por ejemplo `_mcd(a, b)`. Su nombre queda a tu elección porque no forma parte de la interfaz pública del TDA.\n\n\n6. La clase `Rational` debe tener la siguiente interfaz pública:\n\n   ```python\n   Rational(numerator, denominator)\n        numerator()\n        denominator()\n        add(other)\n        subtract(other)\n   ```\n\n7. La interfaz tiene las siguientes precondiciones:\n\n   - `numerator` y `denominator` deben ser objetos de tipo `int`;\n   - `other` debe ser un objeto de tipo `Rational`;\n   - no es necesario validar estas precondiciones ni definir el comportamiento para argumentos de otros tipos;\n   - el constructor sí debe verificar el denominador y producir un `ValueError` cuando sea cero. No se evaluará el mensaje exacto de la excepción.\n\n8. Todo objeto `Rational` debe mantener una representación válida, simplificada y canónica.\n\n   Para esta práctica, considera las siguientes condiciones:\n\n   - el numerador y el denominador no deben tener divisores comunes positivos mayores que `1`;\n   - el constructor debe aceptar el signo tanto en el numerador como en el denominador y normalizar la representación para que el denominador sea positivo y el signo, cuando exista, quede en el numerador;\n   - cualquier fracción cuyo numerador sea cero debe representarse como `0/1`;\n   - el numerador y el denominador de la representación interna deben ser de tipo `int`;\n   - la representación interna no forma parte de la interfaz pública. Los nombres concretos de sus atributos quedan a elección del estudiante.\n\n9. La interfaz tiene las siguientes postcondiciones:\n\n   - `numerator()` regresa el numerador simplificado como un `int`;\n   - `denominator()` regresa el denominador positivo y simplificado como un `int`;\n   - si el objeto actual representa `a/b` y `other` representa `c/d`, `add(other)` regresa un nuevo `Rational` equivalente a `(a*d + c*b)/(b*d)`, ya simplificado;\n   - bajo las mismas condiciones, `subtract(other)` regresa un nuevo `Rational` equivalente a `(a*d - c*b)/(b*d)`, ya simplificado;\n   - `add(other)` y `subtract(other)` regresan un nuevo objeto independiente de tipo `Rational`, ya simplificado;\n   - ninguna de las dos operaciones modifica el objeto actual ni `other`.\n\n10. Ejemplo mínimo del comportamiento esperado:\n\n   ```python\n   a = Rational(2, 4)\n   b = Rational(1, 3)\n\n   c = a.add(b)       # 5/6\n   d = a.subtract(b)  # 1/6\n\n   print(c.numerator()) #5\n   print(c.denominator()) #6\n   ```\n\n11. Edita el archivo `README.md` ubicado en la raíz del repositorio y agrega la siguiente información:\n\n   ```markdown\n   # Práctica 1: TDA Rational\n\n   ## Información del estudiante\n\n   - Nombre completo:\n   - Usuario de GitHub:\n   - Sistema operativo usado:\n\n   ## Declaración de uso de IA\n\n   - Uso de IA: sí/no\n   - Utilización: describe brevemente para qué la usaste. Si no usaste IA, escribe \"No utilicé IA\".\n   ```\n\n12. Empuja tus cambios al repositorio remoto.\n\n13. Verifica el estado de la entrega en GitHub Classroom.\n\n## Restricciones\n\nNo cambies los nombres solicitados para la carpeta, el archivo, la clase o los métodos públicos.\n\nNo uses `math.gcd`, `fractions.Fraction` ni ninguna función o biblioteca que calcule el MCD o simplifique fracciones por ti.\n\n## Límite de envíos\n\nNo hay límite de envíos para esta práctica.",
-      "due": "2026-08-27T23:30:00Z",
+      "due": "2026-09-03T23:30:00Z",
       "due_meta": {
-        "input": "2026-08-27T17:30:00",
+        "input": "2026-09-03T17:30:00",
         "zone": "America/Mexico_City",
         "offset": "-06:00",
         "source": "auto-detected"
       },
-      "available_from": "2026-08-27T21:00:00Z",
+      "available_from": "2026-09-03T21:00:00Z",
       "available_from_meta": {
-        "input": "2026-08-27T15:00:00",
+        "input": "2026-09-03T15:00:00",
         "zone": "America/Mexico_City",
         "offset": "-06:00",
         "source": "auto-detected"
