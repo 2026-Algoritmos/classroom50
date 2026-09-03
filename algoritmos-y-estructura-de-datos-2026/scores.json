@@ -122,7 +122,7 @@
         {
           "owner": "SamuelMarEs",
           "first_name": "Samuel",
-          "last_name": "M\u00e1rquez Estrada",
+          "last_name": "Márquez Estrada",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -1452,7 +1452,7 @@
         {
           "owner": "SamuelMarEs",
           "first_name": "Samuel",
-          "last_name": "M\u00e1rquez Estrada",
+          "last_name": "Márquez Estrada",
           "submissions": [
             {
               "schema": "classroom50/result/v1",
@@ -3960,7 +3960,28 @@
     },
     "practica-2": {
       "type": "individual",
-      "entries": [],
+      "entries": [
+        {
+          "owner": "ale488570-debug",
+          "override": true,
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "ale488570-debug",
+              "submission": "submit/manual-2026-09-03T23-01-30Z",
+              "commit": "submit/manual-2026-09-03T23-01-30Z",
+              "release": "submit/manual-2026-09-03T23-01-30Z",
+              "review": "submit/manual-2026-09-03T23-01-30Z",
+              "datetime": "2026-09-03T23:01:30Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": []
+            }
+          ]
+        }
+      ],
       "collected_at": "2026-08-20T04:53:29Z"
     }
   }
