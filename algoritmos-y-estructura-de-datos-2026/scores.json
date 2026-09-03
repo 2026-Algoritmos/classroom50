@@ -3980,6 +3980,26 @@
               "tests": []
             }
           ]
+        },
+        {
+          "owner": "recordnamehere-svg",
+          "override": true,
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "recordnamehere-svg",
+              "submission": "submit/manual-2026-09-03T23-38-25Z",
+              "commit": "submit/manual-2026-09-03T23-38-25Z",
+              "release": "submit/manual-2026-09-03T23-38-25Z",
+              "review": "submit/manual-2026-09-03T23-38-25Z",
+              "datetime": "2026-09-03T23:38:25Z",
+              "score": 10,
+              "max-score": 10,
+              "tests": []
+            }
+          ]
         }
       ],
       "collected_at": "2026-08-20T04:53:29Z"
