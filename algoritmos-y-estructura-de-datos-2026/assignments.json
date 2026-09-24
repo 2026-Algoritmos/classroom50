@@ -186,6 +186,54 @@
           "expected": "ok"
         }
       ]
+    },
+    {
+      "slug": "practica-4",
+      "name": "Practica 3",
+      "mode": "individual",
+      "autograder": "default",
+      "feedback_pr": true,
+      "description": "# Práctica 3: Equilibrio de una lista\n\n## Objetivo\n\nDiseñar e implementar un algoritmo iterativo que redistribuya las cantidades de una lista, conserve un invariante dado y termine en un estado que cumpla la postcondición.\n\n## Problema\n\nUna lista representa cantidades de unidades distribuidas entre varias posiciones. Debes redistribuirlas hasta que las cantidades de cualesquiera dos posiciones difieran, como máximo, en una unidad, sin perder ni crear unidades.\n\nEn cada iteración completa se permite una única transferencia: restar una unidad a una posición y sumar una unidad a otra posición distinta. Las demás posiciones deben permanecer sin cambios. Ninguna cantidad puede volverse negativa.\n\nPor ejemplo, para la entrada:\n\n```python\n[9, 1, 2]\n```\n\nel resultado final debe ser:\n\n```python\n[4, 4, 4]\n```\n\nNo siempre es posible que todas las cantidades sean iguales. Para `[8, 0, 3]`, un resultado válido es `[4, 4, 3]`. También son válidas sus otras distribuciones por posición, como `[3, 4, 4]`. No se exige ordenar el resultado.\n\nDebes diseñar la estrategia para elegir las posiciones de cada transferencia y la guarda del ciclo. Tu algoritmo debe terminar para toda entrada que cumpla la precondición.\n\n## Especificación\n\n### Precondición\n\n- La entrada `A` es una lista no vacía, de tamaño n.\n- Todos sus elementos son objetos de tipo `int` mayores o iguales que cero.\n- No es necesario validar estas precondiciones ni definir el comportamiento para entradas que no las cumplan.\n\nSea $A_0$ la lista inicial, $n$ su longitud y $S$ la cantidad total de unidades:\n\n$$\nn\\geq 1,\\qquad A_0\\in\\mathbb{Z}_{\\geq0}^{\\,n},\\qquad\nS=\\sum_{i=0}^{n-1}A_0[i].\n$$\n\nLos valores de $n$ y $S$ se mantienen como referencia durante todo el proceso.\n\n### Invariante\n\nSea $A_k$ el estado de la lista después de $k$ iteraciones completas. El invariante que debe conservar tu algoritmo es:\n\n$$\nI(k):\\quad A_k\\in\\mathbb{Z}_{\\geq0}^{\\,n}\n\\quad\\land\\quad\n\\sum_{i=0}^{n-1}A_k[i]=S.\n$$\n\n\n### Postcondición\n\nAl terminar, la lista final $A_f$ debe conservar el invariante y satisfacer:\n\n$$\n|A_f[i]-A_f[j]|\\leq1\n\\qquad\\text{para cualesquiera }0\\leq i,j<n.\n$$\n\n## Implementación\n\n1. Clona el repositorio de esta práctica en tu computadora.\n\n2. Dentro del repositorio, crea una carpeta llamada `practica_03`.\n\n3. Dentro de `practica_03`, crea un archivo llamado `equilibrador.py`.\n\n4. En `equilibrador.py`, implementa una función llamada `equilibrador(A)`.\n\n5. La función debe cumplir lo siguiente:\n\n   - Inicializar el estado con los mismos valores y en el mismo orden que `A`, sin realizar transferencias. Se debe conservar una copia independiente: modificar posteriormente la copia no debe modificar la lista original.\n   - Realizar las operaciones necesarias para cumplir con el comportamiento requerido por la precondición, el invariante y la postcondición.\n   - Regresar dos valores, en este orden: la lista original y la lista final equilibrada. Deben poder recibirse así: `original, equilibrada = equilibrador(A)`.\n\n6. Los nombres y la organización de las variables locales quedan a tu elección.\n\n\n7. Edita el archivo `README.md` ubicado en la raíz del repositorio y agrega la siguiente información:\n\n    ```markdown\n    # Práctica 3: Equilibrio de una lista\n\n    ## Información del estudiante\n\n    - Nombre completo:\n    - Usuario de GitHub:\n    - Sistema operativo usado:\n    - Versión de Python:\n\n    ## Declaración de uso de IA\n\n    - Uso de IA: sí/no\n    - Utilización: describe brevemente para qué la usaste. Si no usaste IA, escribe \"No utilicé IA\".\n    ```\n\n8. Empuja tus cambios al repositorio remoto.\n\n9. Verifica el estado de la entrega en Classroom 50.\n\n## Restricciones\n\n- No cambies los nombres solicitados para la carpeta, el archivo y la función.\n- No incluyas `input`, `print` ni mediciones de tiempo dentro de `equilibrador.py`.\n- Utiliza únicamente la biblioteca estándar de Python.",
+      "due": "2026-09-11T00:00:00Z",
+      "due_meta": {
+        "input": "2026-09-10T18:00:00",
+        "zone": "America/Mexico_City",
+        "offset": "-06:00",
+        "source": "auto-detected"
+      },
+      "available_from": "2026-09-10T21:00:00Z",
+      "available_from_meta": {
+        "input": "2026-09-10T15:00:00",
+        "zone": "America/Mexico_City",
+        "offset": "-06:00",
+        "source": "auto-detected"
+      },
+      "tests": [
+        {
+          "name": "sanity_check",
+          "type": "io",
+          "run": "python3 -c \"from practica_03.equilibrador import equilibrador; assert callable(equilibrador), 'falta la funcion equilibrador()'; A = [2, 0]; original, equilibrada = equilibrador(A); assert isinstance(original, list), 'el primer valor debe ser una lista'; assert isinstance(equilibrada, list), 'el segundo valor debe ser una lista'; assert all(type(x) is int for x in original), 'la lista original debe contener enteros'; assert all(type(x) is int for x in equilibrada), 'la lista equilibrada debe contener enteros'; print('ok')\"",
+          "points": 1,
+          "comparison": "exact",
+          "expected": "ok"
+        },
+        {
+          "name": "basic_check",
+          "type": "io",
+          "run": "python3 -c \"from practica_03.equilibrador import equilibrador; a = [9, 1, 2]; b = [8, 0, 3]; c = [2, 7, 0, 3]; d = [1, 5, 5, 1]; original_a, equilibrada_a = equilibrador(a); original_b, equilibrada_b = equilibrador(b); original_c, equilibrada_c = equilibrador(c); original_d, equilibrada_d = equilibrador(d); assert a == [9, 1, 2], 'se modifico la lista de entrada'; assert b == [8, 0, 3], 'se modifico la lista de entrada'; assert c == [2, 7, 0, 3], 'se modifico la lista de entrada'; assert d == [1, 5, 5, 1], 'se modifico la lista de entrada'; assert original_a == [9, 1, 2], 'no se regreso la lista original'; assert original_b == [8, 0, 3], 'no se regreso la lista original'; assert original_c == [2, 7, 0, 3], 'no se regreso la lista original'; assert original_d == [1, 5, 5, 1], 'no se regreso la lista original'; assert sorted(equilibrada_a) == [4, 4, 4], 'resultado incorrecto para [9, 1, 2]'; assert sorted(equilibrada_b) == [3, 4, 4], 'resultado incorrecto para [8, 0, 3]'; assert sorted(equilibrada_c) == [3, 3, 3, 3], 'resultado incorrecto para [2, 7, 0, 3]'; assert sorted(equilibrada_d) == [3, 3, 3, 3], 'resultado incorrecto para [1, 5, 5, 1]'; print('ok')\"",
+          "points": 5,
+          "comparison": "exact",
+          "expected": "ok"
+        },
+        {
+          "name": "edge_check",
+          "type": "io",
+          "run": "python3 -c \"from practica_03.equilibrador import equilibrador; assert equilibrador([0])[1] == [0], 'resultado incorrecto para [0]'; assert equilibrador([7])[1] == [7], 'resultado incorrecto para [7]'; assert equilibrador([0, 0, 0])[1] == [0, 0, 0], 'resultado incorrecto para [0, 0, 0]'; assert equilibrador([4, 4, 4])[1] == [4, 4, 4], 'resultado incorrecto para [4, 4, 4]'; assert sorted(equilibrador([0, 1])[1]) == [0, 1], 'resultado incorrecto para [0, 1]'; assert sorted(equilibrador([0, 0, 1, 0, 0])[1]) == [0, 0, 0, 0, 1], 'resultado incorrecto para [0, 0, 1, 0, 0]'; assert equilibrador([0, 12])[1] == [6, 6], 'resultado incorrecto para [0, 12]'; assert equilibrador([12, 0])[1] == [6, 6], 'resultado incorrecto para [12, 0]'; assert equilibrador([18, 0, 0, 0, 0, 0])[1] == [3, 3, 3, 3, 3, 3], 'resultado incorrecto para [18, 0, 0, 0, 0, 0]'; print('ok')\"",
+          "points": 4,
+          "comparison": "exact",
+          "expected": "ok"
+        }
+      ]
     }
   ]
 }
