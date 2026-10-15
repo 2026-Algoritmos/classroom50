@@ -282,6 +282,54 @@
           "expected": "ok"
         }
       ]
+    },
+    {
+      "slug": "practica-6",
+      "name": "Practica 5",
+      "mode": "individual",
+      "autograder": "default",
+      "feedback_pr": true,
+      "description": "# Práctica 5: Números de Hamming\n\n## Objetivo\n\nImplementar el TDA cola y reutilizarlo para generar los primeros números de Hamming en orden creciente.\n\nLa práctica evalúa que puedas implementar una interfaz definida, ocultar la representación interna y combinar candidatos de distintas colas sin omitir valores ni repetirlos.\n\n## Problema\n\nUn **número de Hamming** es un entero positivo de la forma\n\n$$\n2^a3^b5^c,\n\\qquad a,b,c\\in\\mathbb{Z}_{\\geq 0}.\n$$\n\nPor tanto, `1` es el primer número de Hamming: se obtiene con $a=b=c=0$. Los primeros diez, en orden creciente, son:\n\n```text\n1, 2, 3, 4, 5, 6, 8, 9, 10, 12\n```\n\nImplementa una función que reciba `n` y devuelva una lista con los **primeros `n` números de Hamming**, en orden estrictamente creciente. No debe faltar ninguno ni aparecer valores repetidos.\n\nUn mismo número puede generarse como candidato en más de una cola. Por ejemplo, `6` se genera al multiplicar `3` por `2` y al multiplicar `2` por `3`, pero debe incluirse una sola vez en el resultado.\n\n## Especificación\n\nLa implementación tiene dos partes, ambas en `hamming.py`: primero programa la clase `Cola`, que representa el TDA cola usando `collections.deque`; después implementa `numeros_hamming(n)` y reutiliza esa clase para crear las tres colas del algoritmo.\n\n### TDA cola\n\nEl constructor `Cola()` no recibe argumentos y crea una cola vacía usando un objeto `deque` como contenedor interno. Cada instancia debe tener su propio contenedor: modificar una cola no debe modificar las demás.\n\nSu interfaz pública es:\n\n| Método | Comportamiento | Devuelve |\n| --- | --- | --- |\n| `encolar(x)` | Agrega `x` al final de la cola. | `None` |\n| `desencolar()` | Retira el elemento del frente. | El dato retirado. |\n\nLos nombres de los atributos internos quedan a tu elección. El algoritmo de Hamming debe utilizar únicamente los métodos públicos de la cola.\n\n### Precondición de `numeros_hamming(n)`\n\n- `n` es un objeto de tipo `int` mayor o igual que `1`.\n- No es necesario validar esta precondición ni definir el comportamiento para otros argumentos.\n\n### Postcondición de `numeros_hamming(n)`\n\nLa función devuelve una lista de longitud `n` cuyos elementos:\n\n- son objetos de tipo `int` que representan números de Hamming;\n- están ordenados estrictamente de menor a mayor;\n- son exactamente los primeros `n` números de Hamming, comenzando por `1`.\n\nPor ejemplo:\n\n```python\nnumeros_hamming(1)   # [1]\nnumeros_hamming(6)   # [1, 2, 3, 4, 5, 6]\nnumeros_hamming(10)  # [1, 2, 3, 4, 5, 6, 8, 9, 10, 12]\n```\n\n## Uso de colas\n\nSea $h$ un número de Hamming que ya hemos obtenido:\n\n$$\nh=2^a3^b5^c.\n$$\n\nAquí, **$h$ es el número completo; $a,b,c$ son sus exponentes**. Al multiplicar $h$ por $2$, $3$ o $5$, aumentamos en uno el exponente correspondiente:\n\n$$\n\\begin{aligned}\n2h &= 2^{a+1}3^b5^c,\\\\\n3h &= 2^a3^{b+1}5^c,\\\\\n5h &= 2^a3^b5^{c+1}.\n\\end{aligned}\n$$\n\nPor tanto, los tres productos también son números de Hamming. Por ejemplo, a partir de $h=6$ obtenemos los candidatos `12`, `18` y `30`.\n\nEn `numeros_hamming(n)`, crea **tres instancias de tu clase `Cola`**, asociadas a los multiplicadores `2`, `3` y `5`:\n\n```python\ncola_2 = Cola()\ncola_3 = Cola()\ncola_5 = Cola()\n```\n\nCada nuevo número $h$ incorporado a la respuesta genera tres candidatos: $2h$, $3h$ y $5h$. Agrega cada producto a su cola mediante `encolar(x)` y obtén candidatos mediante `desencolar()`.\n\nPara comparar candidatos, puedes conservar en variables un valor retirado de cada cola. Un valor retirado que todavía no hayas elegido sigue pendiente: debes conservarlo hasta utilizarlo.\n\nDiseña cómo seleccionar el siguiente valor y cómo manejar un candidato que aparece en más de una cola para incorporarlo una sola vez a la respuesta. La lista devuelta puede usarse para conservar los números ya generados; las colas deben determinar los siguientes candidatos.\n\n## Implementación\n\n1. Clona el repositorio de esta práctica en tu computadora.\n\n2. Dentro del repositorio, crea la carpeta `practica_05`.\n\n3. Dentro de `practica_05`, crea el archivo `hamming.py`.\n\n4. Implementa primero la clase `Cola` con su constructor y los métodos `encolar(x)` y `desencolar()`. Usa `collections.deque` como representación interna, siguiendo lo visto en clase.\n\n5. En el mismo archivo, implementa `numeros_hamming(n)`. Crea tres objetos de tu clase `Cola` y utiliza sus métodos `encolar(x)` y `desencolar()` para generar los números de Hamming. Los nombres de las variables locales y de las funciones auxiliares quedan a tu elección.\n\n6. Prueba las operaciones de la cola, incluyendo el caso vacío, y verifica que sus instancias sean independientes. Después prueba `numeros_hamming(n)`, al menos, con los tres valores de `n` mostrados en los ejemplos. Comprueba especialmente que `6` aparece una sola vez cuando corresponde incluirlo.\n\n7. Edita el archivo `README.md` de la raíz del repositorio y agrega:\n\n   ```markdown\n   # Práctica 5: Números de Hamming\n\n   ## Información del estudiante\n\n   - Nombre completo:\n   - Usuario de GitHub:\n   - Sistema operativo usado:\n   - Versión de Python:\n\n   ## Declaración de uso de IA\n\n   - Uso de IA: sí/no\n   - Utilización: describe brevemente para qué la usaste. Si no usaste IA, escribe \"No utilicé IA\".\n   ```\n\n8. Empuja tus cambios al repositorio remoto.\n\n9. Verifica el estado de la entrega en Classroom 50.\n\n## Restricciones\n\n- Conserva los nombres de la carpeta, el archivo, la clase, sus métodos públicos y la función indicados.\n- Encapsula `collections.deque` en `Cola`. La función `numeros_hamming(n)` debe utilizar `encolar(x)` y `desencolar()` de tus tres objetos `Cola`, sin acceder a sus atributos internos ni manipular directamente objetos `deque`.\n- Usa las tres colas para generar la sucesión. No obtengas la respuesta recorriendo los enteros positivos para comprobar uno por uno cuáles son de Hamming, ni generes una colección de candidatos para ordenarla al final.\n- No incluyas `input`, `print` ni mediciones de tiempo dentro de `hamming.py`.\n- Utiliza únicamente la biblioteca estándar de Python.",
+      "due": "2026-10-02T00:00:00Z",
+      "due_meta": {
+        "input": "2026-10-01T18:00:00",
+        "zone": "America/Mexico_City",
+        "offset": "-06:00",
+        "source": "auto-detected"
+      },
+      "available_from": "2026-10-01T21:00:00Z",
+      "available_from_meta": {
+        "input": "2026-10-01T15:00:00",
+        "zone": "America/Mexico_City",
+        "offset": "-06:00",
+        "source": "auto-detected"
+      },
+      "tests": [
+        {
+          "name": "sanity_check",
+          "type": "io",
+          "run": "python3 -c \"from practica_05.hamming import Cola, numeros_hamming; cola = Cola(); assert callable(getattr(cola, 'encolar', None)), 'falta el metodo encolar()'; assert callable(getattr(cola, 'desencolar', None)), 'falta el metodo desencolar()'; assert callable(numeros_hamming), 'falta la funcion numeros_hamming()'; assert cola.encolar(7) is None, 'encolar() debe regresar None'; assert type(cola.desencolar()) is int, 'desencolar() debe regresar el dato retirado'; resultado = numeros_hamming(3); assert isinstance(resultado, list), 'numeros_hamming() debe regresar una lista'; assert len(resultado) == 3, 'la lista debe tener n elementos'; assert all(type(numero) is int for numero in resultado), 'la lista debe contener enteros'; print('ok')\"",
+          "points": 1,
+          "comparison": "exact",
+          "expected": "ok"
+        },
+        {
+          "name": "basic_check",
+          "type": "io",
+          "run": "python3 -c \"from practica_05.hamming import Cola, numeros_hamming; cola = Cola(); cola.encolar(10); cola.encolar(20); assert cola.desencolar() == 10, 'la cola debe retirar primero el dato mas antiguo'; cola.encolar(30); assert cola.desencolar() == 20, 'encolar no debe alterar el orden de los pendientes'; assert cola.desencolar() == 30, 'dato retirado incorrecto'; assert numeros_hamming(6) == [1, 2, 3, 4, 5, 6], 'resultado incorrecto para n=6'; assert numeros_hamming(10) == [1, 2, 3, 4, 5, 6, 8, 9, 10, 12], 'resultado incorrecto para n=10'; assert numeros_hamming(15) == [1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24], 'resultado incorrecto para n=15'; print('ok')\"",
+          "points": 5,
+          "comparison": "exact",
+          "expected": "ok"
+        },
+        {
+          "name": "edge_check",
+          "type": "io",
+          "run": "python3 -c \"from practica_05.hamming import Cola, numeros_hamming; cola_a = Cola(); cola_b = Cola(); cola_a.encolar(4); cola_b.encolar(9); cola_a.encolar(8); assert cola_b.desencolar() == 9, 'las colas deben ser independientes'; assert cola_a.desencolar() == 4, 'se alteraron los datos de otra cola'; assert cola_a.desencolar() == 8, 'se alteraron los datos de otra cola'; cola_a.encolar(7); cola_a.encolar(7); cola_a.encolar(11); assert cola_a.desencolar() == 7, 'la cola debe poder reutilizarse despues de vaciarse'; assert cola_a.desencolar() == 7, 'la cola debe conservar los datos repetidos'; assert cola_a.desencolar() == 11, 'dato retirado incorrecto despues de los repetidos'; resultado_uno = numeros_hamming(1); assert resultado_uno == [1], 'resultado incorrecto para n=1'; assert type(resultado_uno[0]) is int, 'el primer numero de Hamming debe ser un int'; esperada = [1, 2, 3, 4, 5, 6, 8, 9, 10, 12, 15, 16, 18, 20, 24, 25, 27, 30, 32, 36, 40, 45, 48, 50, 54, 60, 64, 72, 75, 80]; assert numeros_hamming(30) == esperada, 'resultado incorrecto para n=30: no debe haber omisiones ni repetidos'; assert numeros_hamming(2) == [1, 2], 'resultado incorrecto para n=2 despues de una llamada con n mayor'; print('ok')\"",
+          "points": 4,
+          "comparison": "exact",
+          "expected": "ok"
+        }
+      ]
     }
   ]
 }
