@@ -19,6 +19,25 @@
             "SamuelMarEs"
           ],
           "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9cb71cc33f8cf905-3",
+          "id": 20291296,
+          "name": "Fernando-Enora",
+          "members": [
+            "AmeliaDi",
+            "hormiguita2"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9cb71cc33f8cf905-4",
+          "id": 20291347,
+          "name": "Gerónimo-Eli",
+          "members": [
+            "GeroChavez"
+          ],
+          "formation": "student"
         }
       ]
     }
