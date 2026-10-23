@@ -1,0 +1,26 @@
+{
+  "schema": "classroom50/teams/v1",
+  "assignments": {
+    "proyecto-final": {
+      "teams": [
+        {
+          "slug": "classroom50-group-9cb71cc33f8cf905-1",
+          "id": 20270881,
+          "members": [
+            "emontanovaazquez-hue"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9cb71cc33f8cf905-2",
+          "id": 20284072,
+          "name": "Samuel-Panuncio",
+          "members": [
+            "SamuelMarEs"
+          ],
+          "formation": "student"
+        }
+      ]
+    }
+  }
+}
