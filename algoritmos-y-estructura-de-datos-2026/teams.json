@@ -8,7 +8,8 @@
           "id": 20284072,
           "name": "Samuel-Panuncio",
           "members": [
-            "SamuelMarEs"
+            "SamuelMarEs",
+            "ealmarazgon"
           ],
           "formation": "student"
         },
@@ -27,7 +28,72 @@
           "id": 20291347,
           "name": "Gerónimo-Eli",
           "members": [
-            "GeroChavez"
+            "GeroChavez",
+            "eligranados007"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9cb71cc33f8cf905-5",
+          "id": 20291591,
+          "members": [
+            "Wolfgang777-alt"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9cb71cc33f8cf905-6",
+          "id": 20292138,
+          "name": "Kyle-Emmanuel",
+          "members": [
+            "recordnamehere-svg"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9cb71cc33f8cf905-7",
+          "id": 20292928,
+          "name": "Hamas-Keily",
+          "members": [
+            "mariadelcarmen270767-ux",
+            "hamasb"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9cb71cc33f8cf905-8",
+          "id": 20292932,
+          "name": "Esperanza-Alejandra",
+          "members": [
+            "Esperanza201406",
+            "ale488570-debug"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9cb71cc33f8cf905-9",
+          "id": 20292965,
+          "name": "Cedrix y Paco",
+          "members": [
+            "franciscosanaphre-lab",
+            "cedrix0506"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9cb71cc33f8cf905-10",
+          "id": 20293010,
+          "name": "mateo",
+          "members": [
+            "amalie82"
+          ],
+          "formation": "student"
+        },
+        {
+          "slug": "classroom50-group-9cb71cc33f8cf905-11",
+          "id": 20293108,
+          "members": [
+            "CarlosEnriqueGonzalez"
           ],
           "formation": "student"
         }
