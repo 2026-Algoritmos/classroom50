@@ -4,6 +4,15 @@
     "proyecto-final": {
       "teams": [
         {
+          "slug": "classroom50-group-9cb71cc33f8cf905-1",
+          "id": 20373790,
+          "name": "Emiliano-Javier",
+          "members": [
+            "basurtoemiliano60-boop"
+          ],
+          "formation": "student"
+        },
+        {
           "slug": "classroom50-group-9cb71cc33f8cf905-2",
           "id": 20284072,
           "name": "Samuel-Panuncio",
