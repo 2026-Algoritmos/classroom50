@@ -394,7 +394,7 @@
         "offset": "-06:00",
         "source": "auto-detected"
       },
-      "max_group_size": 2,
+      "max_group_size": 3,
       "team_formation": "student",
       "grading": {
         "mode": "off"
