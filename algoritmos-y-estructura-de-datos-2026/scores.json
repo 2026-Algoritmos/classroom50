@@ -1442,9 +1442,54 @@
               "late": false
             }
           ]
+        },
+        {
+          "owner": "recordnamehere-svg",
+          "submissions": [
+            {
+              "schema": "classroom50/result/v1",
+              "classroom": "algoritmos-y-estructura-de-datos-2026",
+              "assignment_type": "individual",
+              "owner": "recordnamehere-svg",
+              "submission": "submit/2026-10-29T22-28-14Z-c71e059",
+              "commit": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-recordnamehere-svg/commit/c71e059238e629efdf878948184ce0bce9cac84e",
+              "release": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-recordnamehere-svg/releases/tag/submit%2F2026-10-29T22-28-14Z-c71e059",
+              "review": "https://github.com/2026-Algoritmos/algoritmos-y-estructura-de-datos-2026-practica-0-recordnamehere-svg/compare/c23ae5919d09205c028d79798a9036968a3b45c0...c71e059238e629efdf878948184ce0bce9cac84e",
+              "datetime": "2026-10-29T22:27:59Z",
+              "graded_at": "2026-10-29T22:28:29Z",
+              "score": 6,
+              "max-score": 10,
+              "tests": [
+                {
+                  "test-name": "sanity_check",
+                  "passed": true,
+                  "score": 1,
+                  "max-score": 1
+                },
+                {
+                  "test-name": "basic_check",
+                  "passed": true,
+                  "score": 5,
+                  "max-score": 5
+                },
+                {
+                  "test-name": "edge_check",
+                  "passed": false,
+                  "score": 0,
+                  "max-score": 4
+                }
+              ],
+              "submitted_by": {
+                "username": "recordnamehere-svg",
+                "id": 282643263
+              },
+              "late": true
+            }
+          ]
         }
       ],
-      "collected_at": "2026-08-24T16:00:46Z"
+      "collected_at": "2026-11-06T15:20:58Z",
+      "detected": []
     },
     "practica-1": {
       "type": "individual",
